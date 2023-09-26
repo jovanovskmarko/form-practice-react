@@ -17,7 +17,7 @@ const AddUser = (props) => {
     if (+enteredAge < 1) {
       return;
     }
-    console.log("nesto");
+    props.onAddUser(enteredUserName, enteredAge);
     setEnteredAge("");
     setEnteredUsername("");
   };
